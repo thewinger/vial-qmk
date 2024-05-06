@@ -38,13 +38,7 @@
         "main": "left",
         "soft_serial_pin": "GP0",
         "transport": {
-            "protocol": "serial",
-            "sync": {
-                "oled": true,
-                "layer_state": true,
-                "modifiers": true,
-                "matrix_state": true
-            }
+            "protocol": "serial_usart"
         },
         "usb_detect": { "timeout": 2500 },
         "handedness": { "pin": "GP9" },
