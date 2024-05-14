@@ -35,7 +35,6 @@
     },
     "split": {
         "enabled": true,
-        "main": "left",
         "soft_serial_pin": "GP0",
         "transport": {
             "sync": {
@@ -70,7 +69,11 @@
     },
     "rgb_matrix": {
         "animations": {
-            "typing_heatmap": true
+            "typing_heatmap": true,
+            "solid_color": true
+        },
+        "default": {
+            "animation": "typing_heatmap"
         },
         "driver": "ws2812",
         "split_count": [34, 39],
@@ -83,7 +86,7 @@
             { "matrix": [0, 1], "x": 38, "y": 6, "flags": 4 },
             { "matrix": [0, 0], "x": 27, "y": 9, "flags": 4 },
             { "matrix": [1, 0], "x": 0, "y": 16, "flags": 4 },
-            { "matrix": [3, 0], "x": 11, "y": 26, "flags": 4 },
+            { "matrix": [2, 0], "x": 11, "y": 26, "flags": 4 },
             { "matrix": [1, 1], "x": 36, "y": 19, "flags": 4 },
             { "matrix": [1, 2], "x": 49, "y": 16, "flags": 4 },
             { "matrix": [1, 3], "x": 61, "y": 14, "flags": 4 },
@@ -109,6 +112,7 @@
             { "matrix": [4, 3], "x": 68, "y": 51, "flags": 4 },
             { "matrix": [4, 1], "x": 37, "y": 57, "flags": 4 },
             { "matrix": [4, 0], "x": 11, "y": 64, "flags": 4 },
+
             { "matrix": [5, 0], "x": 129, "y": 3, "flags": 4 },
             { "matrix": [5, 1], "x": 140, "y": 1, "flags": 4 },
             { "matrix": [5, 2], "x": 152, "y": 0, "flags": 4 },
