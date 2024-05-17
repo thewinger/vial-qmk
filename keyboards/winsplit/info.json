@@ -5,6 +5,9 @@
     "bootloader": "rp2040",
     "processor": "RP2040",
     "diode_direction": "COL2ROW",
+    "build": {
+        "lto": true
+    },
     "url": "",
     "usb": {
         "device_version": "1.0.0",
@@ -14,10 +17,11 @@
     "features": {
         "bootmagic": true,
         "command": false,
-        "console": true,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
+        "encoder": true,
         "rgb_matrix": true
     },
     "matrix_pins": {
@@ -32,6 +36,13 @@
             "NO_PIN"
         ],
         "rows": ["GP4", "GP5", "GP6", "GP7", "GP8"]
+    },
+    "encoder": {
+        "rotary": [{ "pin_a": "GP12", "pin_b": "GP13", "resolution": 4 }]
+    },
+    "bootmagic": {
+        "enabled": true,
+        "matrix": [0, 0]
     },
     "split": {
         "enabled": true,
@@ -69,8 +80,7 @@
     },
     "rgb_matrix": {
         "animations": {
-            "typing_heatmap": true,
-            "solid_color": true
+            "typing_heatmap": true
         },
         "default": {
             "animation": "typing_heatmap"
@@ -157,6 +167,7 @@
     "layouts": {
         "LAYOUT": {
             "layout": [
+                { "matrix": [1, 0], "x": 0, "y": 0.12 },
                 { "matrix": [0, 0], "x": 2.5, "y": 0.12 },
                 { "matrix": [0, 1], "x": 3.5, "y": 0.12 },
                 { "matrix": [0, 2], "x": 4.5, "y": 0.12 },
@@ -173,8 +184,9 @@
                 { "matrix": [5, 5], "x": 16.5, "y": 0.12 },
                 { "matrix": [5, 6], "x": 17.5, "y": 0.12 },
                 { "matrix": [5, 7], "x": 18.5, "y": 0.12 },
+                { "matrix": [6, 7], "x": 20, "y": 0.12 },
 
-                { "matrix": [1, 0], "x": 0, "y": 0.12 },
+                { "matrix": [2, 0], "x": 0.75, "y": 1.12 },
                 { "matrix": [1, 1], "x": 2.75, "y": 1.12 },
                 { "matrix": [1, 2], "x": 4.25, "y": 1.12 },
                 { "matrix": [1, 3], "x": 5.5, "y": 1.12 },
@@ -189,9 +201,9 @@
                 { "matrix": [6, 4], "x": 15.75, "y": 1.12 },
                 { "matrix": [6, 5], "x": 16.75, "y": 1.12 },
                 { "matrix": [6, 6], "x": 17.75, "y": 1.12 },
-                { "matrix": [6, 7], "x": 20, "y": 0.12 },
+                { "matrix": [7, 7], "x": 18.75, "y": 1.12 },
 
-                { "matrix": [2, 0], "x": 0.75, "y": 1.12 },
+                { "matrix": [3, 0], "x": 0.75, "y": 2.12 },
                 { "matrix": [2, 1], "x": 2.25, "y": 2.12 },
                 { "matrix": [2, 2], "x": 4, "y": 2.12 },
                 { "matrix": [2, 3], "x": 5.5, "y": 2.12 },
@@ -206,16 +218,16 @@
                 { "matrix": [7, 4], "x": 16, "y": 2.12 },
                 { "matrix": [7, 5], "x": 17, "y": 2.12 },
                 { "matrix": [7, 6], "x": 18, "y": 2.12 },
-                { "matrix": [7, 7], "x": 18.75, "y": 1.12 },
 
-                { "matrix": [3, 0], "x": 0.75, "y": 2.12 },
                 { "matrix": [3, 1], "x": 1.75, "y": 3.12 },
                 { "matrix": [3, 2], "x": 3.75, "y": 3.12 },
                 { "matrix": [3, 3], "x": 5.5, "y": 3.12 },
                 { "matrix": [3, 4], "x": 6.5, "y": 3 },
                 { "matrix": [3, 5], "x": 7.5, "y": 3.12 },
                 { "matrix": [3, 6], "x": 8.5, "y": 3.25 },
+                { "matrix": [4, 6], "x": 9.5, "y": 3.25 },
 
+                { "matrix": [9, 0], "x": 10.5, "y": 3.25 },
                 { "matrix": [8, 0], "x": 11.5, "y": 3.25 },
                 { "matrix": [8, 1], "x": 12.5, "y": 3.12 },
                 { "matrix": [8, 2], "x": 13.5, "y": 3 },
@@ -229,9 +241,7 @@
                 { "matrix": [4, 3], "x": 6, "y": 4.12 },
                 { "matrix": [4, 4], "x": 7.25, "y": 4.12 },
                 { "matrix": [4, 5], "x": 8.5, "y": 4.25 },
-                { "matrix": [4, 6], "x": 9.5, "y": 3.25 },
 
-                { "matrix": [9, 0], "x": 10.5, "y": 3.25 },
                 { "matrix": [9, 1], "x": 10.5, "y": 4.25 },
                 { "matrix": [9, 2], "x": 12.75, "y": 4.12 },
                 { "matrix": [9, 3], "x": 14, "y": 4.12 },
