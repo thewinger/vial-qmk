@@ -22,7 +22,8 @@
         "mousekey": true,
         "nkro": true,
         "encoder": true,
-        "rgb_matrix": true
+        "rgb_matrix": true,
+        "wpm": true
     },
     "matrix_pins": {
         "cols": [
@@ -38,7 +39,7 @@
         "rows": ["GP4", "GP5", "GP6", "GP7", "GP8"]
     },
     "encoder": {
-        "rotary": [{ "pin_a": "GP12", "pin_b": "GP13", "resolution": 4 }]
+        "rotary": [{ "pin_a": "GP12", "pin_b": "GP13", "resolution": 2 }]
     },
     "bootmagic": {
         "enabled": true,
