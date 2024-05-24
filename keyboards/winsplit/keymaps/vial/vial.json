@@ -6,9 +6,9 @@
     },
     "customKeycodes": [
         {
-            "name": "NTilde",
+            "name": "B_NTIL",
             "title": "Direct n tilde",
-            "shortName": "n~"
+            "shortName": "ñ"
         }
     ],
     "layouts": {

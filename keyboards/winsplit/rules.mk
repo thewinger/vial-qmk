@@ -1,4 +1,5 @@
 SERIAL_DRIVER = vendor
 OLED_ENABLE = yes
 CAPS_WORD_ENABLE = yes
+WPM_ENABLE = yes
 

@@ -17,7 +17,12 @@
 #define I2C1_SDA_PIN GP2
 #define I2C1_SCL_PIN GP3
 
-#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+// #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+#define CAPS_WORD_INVERT_ON_SHIFT
+
+// #define RETRO_TAPPING_PER_KEY
+#define PERMISSIVE_HOLD
+
 
 /* disable debug print */
 //#define NO_DEBUG
