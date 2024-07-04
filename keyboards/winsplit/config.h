@@ -19,7 +19,7 @@
 // #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 #define CAPS_WORD_INVERT_ON_SHIFT
 #define TAPPING_TERM 175
-
+#define TAPPING_TOGGLE 2
 
 /* disable debug print */
 // #define NO_DEBUG

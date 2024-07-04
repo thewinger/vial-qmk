@@ -9,6 +9,31 @@
             "name": "B_NTIL",
             "title": "Direct n tilde",
             "shortName": "ñ"
+        },
+        {
+            "name": "B_WQUT",
+            "title": "Direct quotes",
+            "shortName": "Quote"
+        },
+        {
+            "name": "B_DWQT",
+            "title": "Direct  double quotes",
+            "shortName": "2Quotes"
+        },
+        {
+            "name": "B_BQUT",
+            "title": "Back quote",
+            "shortName": "BQuote"
+        },
+        {
+            "name": "B_Tild",
+            "title": "Tilde",
+            "shortName": "~"
+        },
+        {
+            "name": "B_EURO",
+            "title": "Euro",
+            "shortName": "€"
         }
     ],
     "layouts": {
