@@ -34,6 +34,11 @@
             "name": "B_EURO",
             "title": "Euro",
             "shortName": "€"
+        },
+        {
+            "name": "B_MUTE",
+            "title": "MUTE",
+            "shortName": "Mute"
         }
     ],
     "layouts": {

@@ -69,10 +69,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, LT3_DEL, _______, _______, _______, _______, _______, _______, _______),
 
     [3] = LAYOUT(_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-                 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, QK_BOOT,
+                 TG(4), _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, QK_BOOT,
                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______),
+
+    [4] = LAYOUT(
+        KC_MPLY,    CW_TOGG, KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5,                KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC, KC_DEL,
+        TG(4),             KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_B,                KC_J, KC_L, KC_U, KC_Y, KC_SCLN, KC_LBRC, KC_RBRC, KC_BSLS,
+        KC_MPLY,      LCTL_T(KC_ESC),KC_A, KC_R, KC_S, KC_T, KC_G,                KC_M, KC_N, KC_E, KC_I, KC_O, KC_QUOT, KC_ENT,
+                            SC_LSPO, KC_Z, KC_X, KC_C, KC_D, KC_V, MO(1),  MO(2), KC_K, KC_H, KC_COMM, KC_DOT, KC_SLSH, SC_RSPC, KC_UP,
+        B_MUTE,                   KC_LCTL, KC_LALT, KC_LGUI, KC_SPC,       LT2_BSPC, KC_RGUI, TT(1),    KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT),
 };
 
 // clang-format on
@@ -163,6 +170,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [1] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
     [2] = {ENCODER_CCW_CW(LGUI(KC_Z), LSG(KC_Z))},
     [3] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
+    [4] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
 };
 #endif
 

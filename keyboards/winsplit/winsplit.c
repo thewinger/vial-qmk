@@ -2869,6 +2869,8 @@ uint16_t frame_sizes[72] = {
 // Draw to OLED
 bool oled_task_user() {
 
+    oled_clear();
+
     switch (get_highest_layer(layer_state)) {
         case 0:
             render_animation();
@@ -2881,6 +2883,9 @@ bool oled_task_user() {
             break;
         case 3:
             render_three();
+            break;
+        case 4:
+            oled_write_ln_P(PSTR("COLEMAK-DH"), false);
             break;
         default:
             // Or use the write_ln shortcut over adding '\n' to the end of your string
