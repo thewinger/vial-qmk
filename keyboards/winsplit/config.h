@@ -19,7 +19,13 @@
 // #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 #define CAPS_WORD_INVERT_ON_SHIFT
 #define TAPPING_TERM 175
+#define TAPPING_TERM_PER_KEY
 #define TAPPING_TOGGLE 2
+
+
+#define AUTO_SHIFT_TIMEOUT 150
+#define NO_AUTO_SHIFT_SPECIAL
+#define NO_AUTO_SHIFT_ALPHA
 
 /* disable debug print */
 // #define NO_DEBUG
